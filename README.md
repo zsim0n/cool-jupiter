@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c623195c-8ea3-403c-ac22-329375b70373/deploy-status)](https://app.netlify.com/sites/cool-jupiter/deploys)
+
 # Cool Jupiter: Things – Zoltansimon.me
 
 Welcome to the repository for *Cool Jupiter: Things*, my personal Astro-powered blog hosted on [Zoltansimon.me](https://zoltansimon.me). This project uses Astro, PicoCSS, and MDX to create a minimalist and fast blog experience. The repository contains both published posts and drafts.
