@@ -1,9 +1,9 @@
 // content.config.ts
 
 import { defineCollection, z } from 'astro:content';
-import { glob, file } from 'astro/loaders'; 
+import { glob, file } from 'astro/loaders';
 import { rssSchema } from '@astrojs/rss'
- 
+
 const posts = defineCollection({
   loader: glob({ pattern: "**/*.mdx", base: "./src/posts" }),
   schema: ({ image }) =>
@@ -19,5 +19,5 @@ const rss = defineCollection({
   loader: glob({ pattern: "**/*.mdx", base: "./src/posts" }),
   schema: rssSchema,
 });
- 
-export const collections = { posts,rss };
+
+export const collections = { posts, rss };

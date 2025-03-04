@@ -1,6 +1,5 @@
 ---
-// SocialFooter.astro
-// No additional frontmatter logic is needed unless you want to pass in props.
+
 ---
 
 <style>
@@ -15,10 +14,10 @@
   i {
     font-size: 160%;
   }
- nav {
-        padding-left:1.5rem;
-        padding-right:1.5rem;
-    }
+  nav {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 </style>
 <footer>
   <nav>
@@ -42,17 +41,15 @@
           <i class="ti ti-brand-linkedin"></i>
         </a>
       </li>
-      <li><a
-        href="/rss.xml"
-        target="_blank"
-        aria-label="Rss Feed"
-      >
-        <i class="ti ti-rss"></i>
-      </a>
+      <li>
+        <a href="/rss.xml" target="_blank" aria-label="Rss Feed">
+          <i class="ti ti-rss"></i>
+        </a>
       </li>
     </ul>
   </nav>
   <p style="text-align: center; margin-top: 1rem;">
-    &copy; 2025 zoltansimon.me - Powered by Astro + PicoCSS - Hosted on Netlify - Source on Github
+    &copy; 2025 zoltansimon.me - Powered by Astro + PicoCSS - Hosted on Netlify
+    - Source on Github
   </p>
 </footer>
