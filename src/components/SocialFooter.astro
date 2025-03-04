@@ -1,0 +1,58 @@
+---
+// SocialFooter.astro
+// No additional frontmatter logic is needed unless you want to pass in props.
+---
+
+<style>
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    --pico-text-decoration: none;
+    text-decoration: var(--pico-text-decoration);
+  }
+  i {
+    font-size: 160%;
+  }
+ nav {
+        padding-left:1.5rem;
+        padding-right:1.5rem;
+    }
+</style>
+<footer>
+  <nav>
+    <ul>
+      <li>
+        <a href="https://zsim0n.medium.com" target="_blank" aria-label="Medium">
+          <i class="ti ti-brand-medium"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/zsim0n" target="_blank" aria-label="GitHub">
+          <i class="ti ti-brand-github"></i>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://linkedin.com/in/zoltansimon27"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <i class="ti ti-brand-linkedin"></i>
+        </a>
+      </li>
+      <li><a
+        href="/rss.xml"
+        target="_blank"
+        aria-label="Rss Feed"
+      >
+        <i class="ti ti-rss"></i>
+      </a>
+      </li>
+    </ul>
+  </nav>
+  <p style="text-align: center; margin-top: 1rem;">
+    &copy; 2025 zoltansimon.me - Powered by Astro + PicoCSS - Hosted on Netlify - Source on Github
+  </p>
+</footer>

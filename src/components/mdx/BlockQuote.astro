@@ -1,0 +1,32 @@
+---
+const props = Astro.props;
+---
+<style>
+blockquote {
+  width:60%;
+  margin:10px;
+  color: #555555;
+  padding:1em 30px 1em 50px;
+  border-left:8px solid #a5a5a5 ;
+  line-height:1.6;
+  position: relative;
+}
+
+blockquote::before{
+  content: "\201C";
+  color:#454545;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+
+</style>
+<blockquote {...props}>
+    <slot /><!-- Be sure to add a `<slot/>` for child content! -->
+</blockquote>

@@ -1,0 +1,84 @@
+---
+title: "Separation of concerns — What is that for?"
+excerpt: "Embracing SoC* over DRY*"
+date: "2016-11-03T14:05:08.876Z"
+thumbnail: "./assets/separation-of-concerns-what-is-that-for/1_MG-it1E6JyHdH-TViHD5ow.jpeg"
+---
+
+![](./assets/separation-of-concerns-what-is-that-for/1_MG-it1E6JyHdH-TViHD5ow.jpeg)
+
+<figcaption>Image credit&nbsp;: <a href="https://shahabalizadeh.artstation.com" data-href="https://shahabalizadeh.artstation.com" class="markup--anchor markup--figure-anchor" rel="nofollow noopener" target="_blank">shahabalizadeh.artstation.com</a></figcaption>
+
+*&TLTR; The post contains a lot of theories and abstracts. Sorry, no code this time.*
+
+Separation of concerns *\[SoC\]* , Keep It Simple and stupid *\[KISS\]*,Don’t repeat yourself *\[DRY\]* are typical examples for principles in software development.
+
+#### **Why do you need principles?**
+
+> **Principles are** some kind of distilled source of truth that come from experiences. They are internally motivating and **guiding you** to do the things that seem good and right.
+
+> Principles are good for your code.
+
+In this post I would like to focus on *Separation of Concerns* that helps me the most dealing with the challenges in a complex, resistent corporate environment.
+
+> **Separation of concerns —** Divide your application into distinct features with as little overlap in functionality as possible. The important factor is minimisation of interaction points to achieve high cohesion and low coupling — Microsoft
+
+You can read more about the the basics at [wikipedia](https://en.wikipedia.org/wiki/Separation_of_concerns), [effectivesoftwaredesign](https://effectivesoftwaredesign.com/2012/02/05/separation-of-concerns/) or [Microsoft](https://msdn.microsoft.com/en-us/library/ee658124.aspx).
+
+#### **Silos and monoliths**
+
+Misinterpretation and unbalanced use of principles result in bad architecture, witch-hunt after duplications and unnecessary bureaucracy with hand-over process madness. It could happen on every level from code to enterprise architecture and always ends in one of the following results:
+
+1.  The crazy optimisation breaks down the boundaries between components and ends in a **monolith.**
+2.  The extreme level of centralization combined with mindless separation of building blocks creates organizational and technological **silos**.
+
+> This Is insane.
+
+> Finding and keeping the right balance is art. That doesn’t mean it is impossible. In short: use them wisely.
+
+![](./assets/separation-of-concerns-what-is-that-for/1_zS5oGbaH6e06Z4ELgHKcmA.png)
+
+#### **Separation of Concerns**
+
+In the following I would like to focus on Separation of Concerns and how this principle encourages and strengthens collaboration. Yes, you have read it right — *I would like to talk about collaboration in the context of separation.*
+
+![](./assets/separation-of-concerns-what-is-that-for/1_T7E-OEPe1RLnQfrYmfK7hg.png)
+
+When you are separating, isolating or decoupling things , there is always a point where you realise that the components you are working on are part of a bigger context. They are not islands. Their purpose is to be part of something bigger. That requires collaboration.
+
+I would like to turn your attention to that thin layer between the components, the boundary that is establishing the separation. Focus on that and forget about the rest for a moment.
+
+![](./assets/separation-of-concerns-what-is-that-for/1_tC5YzhibopluAP5H4fbqzQ.png)
+
+* * *
+
+Every time you are writing code, defining software architecture or describing requirements I suggest to start working with theses boundaries. Identify your external dependencies and define the communication channels between you and the rest of your world.
+
+> Define your API First!
+
+Than fill up the components with content. The following benefits come with this approach:
+
+*   Natural way of reducing complexity by giving access to the larger context.
+*   Experimenting is cheap with an API.
+*   It brings an easy common understanding of the problem that needs to be solved.
+*   By design it creates a clear cut between your components, and at the same time establishes the contract for future communication.
+*   It is encouraging discussion between the parties (teams). Each of them can focus on their own side of the API.
+*   Mocking and stubbing will be a straightforward activity that ease testing.
+*   API is transparency.
+
+The word API *\[Application Programming Interface\]* is related to software development but I would like to encourage you using this technique on higher level as well, or in different contexts, even in organisational development.
+
+#### **Let’s take a look at a few example.**
+
+The most basic API you can find are the function definitions laying in your code. In Object Oriented Programming defining *Interfaces* could be the API. Of course REST APIs or Web Services are de facto APIs. SLAs in the context of an IaaS are the API facing the users.
+
+`build.me, test.me install.me` are the API’s of a Self-contained application thet helps driving through the stages of the lifecycle. They establishing contact with the different systems responsible *Build — Test — Deploy*.
+
+A Cross-functional team using kanban has an API including their backlog and their kanban-board. Definition of Ready *\[DoR\]*, Definition of Done *\[DoD\]* are the API for delivering etc.
+
+Finally I hope you have enjoyed this short tour into the abstract world of software architecture and at least a few af these thoughts help you the next time when you have to deal with boundaries and collaboration.
+
+#### External resources in the topic
+
+*   [https://apievangelist.com/2014/08/11/what-is-an-api-first-strategy-adding-some-dimensions-to-this-new-question/](https://apievangelist.com/2014/08/11/what-is-an-api-first-strategy-adding-some-dimensions-to-this-new-question/)
+*   [https://www.mulesoft.com/resources/esb/succcessful-api-management](https://www.mulesoft.com/resources/esb/succcessful-api-management)

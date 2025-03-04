@@ -1,0 +1,72 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+const posts = (await getCollection("posts")).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());;
+---
+
+<Layout>
+  <main>
+    <style>
+      .posts-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+        margin: 2rem 0;
+        padding: 0 1rem;
+      }
+      .post-tile {
+        border-radius: 0;
+        border: 1px solid var(--pico-border-color);
+        overflow: hidden;
+        transition:
+          background 0.2s,
+          transform 0.2s,
+      }
+      .post-tile:hover {
+        transform: none;
+      }
+      .post-thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px; /* Rounds the corners */
+  
+}
+a, 
+a:link, 
+a:visited, 
+a:hover, 
+a:active {
+  --pico-text-decoration: none;
+  text-decoration: var(--pico-text-decoration);
+}
+
+    </style>
+
+    <div class="grid, posts-grid">
+      {
+        posts.map((post) => (
+          <article class="post-tile">
+            <a href={`/blog/${post.id}`} key={post.id}>
+              <header>
+                <img
+                  class="post-thumbnail"
+                  src={post.data.thumbnail.src}
+                  alt={post.data.title + " thumbnail"}
+                />
+             <h3> {post.data.title}</h3>
+            </header>
+            {post.data.excerpt && <p>{post.data.excerpt}</p>}
+            <footer>
+                <time datetime={post.data.date}>
+                  {new Date(post.data.date).toLocaleDateString()}
+                </time>
+              </footer>
+            </a>
+          </article>
+        ))
+      }
+    </div>
+  </main>
+</Layout>

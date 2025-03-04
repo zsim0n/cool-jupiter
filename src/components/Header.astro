@@ -1,0 +1,26 @@
+---
+// src/components/Header.astro
+import ThemeToggle from "./ThemeToggle.astro";
+---
+<style>
+    li {
+        padding-left:1.5rem;
+        padding-right:1.5rem;
+    }
+    i {
+    font-size: 48px;
+  }
+</style>
+<nav>
+    <ul>
+        <li style="font-family: 'Helvetica Neue', sans-serif; font-weight: 300; font-variant: small-caps; font-size: 2em;">
+            <a href="/" style="text-decoration: none; color: inherit;"><strong>Things</strong></a>
+          </li>
+    </ul>
+    <ul>
+        <li><a href="/me" data-tooltip="about.me"  data-placement="bottom" style="text-decoration: none; color: inherit;"><i class="ti ti-info-circle"></i></a></li>
+        <li>
+            <ThemeToggle />
+        </li>
+    </ul>
+</nav>

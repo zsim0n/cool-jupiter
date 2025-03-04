@@ -1,0 +1,114 @@
+---
+// src/pages/blog/[slug].astro
+import { type CollectionEntry, getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Blockquote from '../../components/mdx/BlockQuote.astro';
+import Figure from '../../components/mdx/Figure.astro';
+export const components = {blockquote: Blockquote, img:Figure}
+import { Debug } from 'astro:components';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('posts');
+	return posts.map((post) => ({
+		params: { slug: post.id },
+		props: {post},
+	}))
+}
+type Props = CollectionEntry<'posts'>;
+
+const {post} = Astro.props;
+
+const {Content} = await render(post);
+
+
+---
+<style>
+  /* Center the card container */
+  .card-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  /* Card styling */
+  .card {
+    max-width: 800px;
+    width: 100%;
+    margin: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  /* Header with thumbnail image */
+  .card-header {
+    position: relative;
+    overflow: hidden;
+  }
+  .card-thumbnail {
+  width: 100%;
+  height: 300px; /* Set a fixed height */
+  object-fit: cover; /* Crop image to fill the area */
+  object-position: center; /* Center the image vertically and horizontally */
+  display: block;
+}
+
+  /* Overlap box for title and date */
+  .card-overlay {
+  position: absolute;
+  bottom: 5px; /* Adjust for desired overlap */
+  background-color: var(--pico-background-color); 
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border-radius: 4px;
+  width: 90%;
+  z-index: 10; /* Bring overlay to the top */
+}
+[data-theme="dark"] {√
+  .card-overlay {
+    --pico-background-color:black;
+  }
+}
+  .card-title {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .card-date {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #888;
+  }
+
+  /* Body and breadcrumb styling */
+  .card-body {
+    padding: 2rem 1rem 1rem;
+  }
+</style>
+<Layout title={post.data.title}>
+  <div class="card-container">
+  <article class="card">
+    <header class="card-header">
+      <img src={post.data.thumbnail.src} alt={post.data.title} class="card-thumbnail" />
+      <div class="card-overlay">
+        <h1 class="card-title">{post.data.title}</h1>
+        <p class="card-date">{
+        new Date(post.data.date).toLocaleDateString("en-US", {
+  weekday: "short",
+  year: "numeric",
+  month: "short",
+  day: "numeric"
+})}</p>
+      </div>
+    </header>
+    <nav aria-label="breadcrumb" class="breadcrumb">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li>{post.data.title}</li>
+      </ul>
+    </nav>
+    <div class="card-body">
+      <Content components={{...components}} />
+    </div>
+  </article>
+</div>
+</Layout>
