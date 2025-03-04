@@ -4,6 +4,12 @@ import Layout from "../layouts/Layout.astro";
 const posts = (await getCollection("posts")).sort(
   (a, b) => b.data.date.getTime() - a.data.date.getTime(),
 );
+
+const seo = {
+  title: "Zoltan Simon – Software Design & Engineering Insights",
+  description:"Explore expert articles on software engineering, Low-Code/No-Code development, JAMStack innovations, and platform-as-code strategies. Empower your digital transformation with actionable insights and proven tips for modern developers.",
+  image:"/hello.png"
+}
 ---
 
 <style>
@@ -41,7 +47,7 @@ const posts = (await getCollection("posts")).sort(
     text-decoration: var(--pico-text-decoration);
   }
 </style>
-<Layout>
+<Layout {...seo}>
   <main>
     <div class="grid, posts-grid">
       {

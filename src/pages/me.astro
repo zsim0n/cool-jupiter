@@ -1,6 +1,12 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
+
+const seo = {
+  title: "Zoltan Simon – Software Design & Engineering Insights",
+  description:"Explore expert articles on software engineering, Low-Code/No-Code development, JAMStack innovations, and platform-as-code strategies. Empower your digital transformation with actionable insights and proven tips for modern developers.",
+  image:"hello.png"
+}
 ---
 
 <style>
@@ -26,7 +32,7 @@ import Layout from "../layouts/Layout.astro";
         padding-left: 1em;
     }
 </style>
-<Layout>
+<Layout {...seo}>
     <section class="me-nav">
         <nav aria-label="breadcrumb" class="breadcrumb">
             <ul>

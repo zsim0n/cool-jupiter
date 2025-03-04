@@ -1,0 +1,35 @@
+---
+import { SEO } from 'astro-seo';
+
+const { title, description, image } = Astro.props;
+console.log(Astro.props.image)
+const url = new URL(Astro.request.url, Astro.site).href;
+const default_image = new URL('hello.png', Astro.site).href;
+---
+<SEO
+      title={title || "A Very Descriptive Title"}
+      description={description || "A heavily optimized description full of well-researched keywords."}
+      openGraph={{
+        basic: {
+          title: title || "A Very Descriptive Title",
+          type: "article",
+          image: image || default_image,
+        }
+      }}
+      extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.ico" }],
+        // extending the default meta tags
+        meta: [
+          {
+            name: "twitter:image",
+            content: image || default_image,
+          },
+          { name: "twitter:title", content: title || "A Very Descriptive Title" },
+          { name: "twitter:description", content: "Agent" },
+        ],
+      }}
+    />
+
+
+

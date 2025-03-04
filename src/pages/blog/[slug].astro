@@ -18,7 +18,11 @@ type Props = CollectionEntry<'posts'>;
 const {post} = Astro.props;
 
 const {Content} = await render(post);
-
+const seo = {
+  title: post.data.title,
+  description:post.data.excerpt,
+  image:post.data.thumbnail.src
+}
 
 ---
 <style>
@@ -83,7 +87,7 @@ const {Content} = await render(post);
     padding: 2rem 1rem 1rem;
   }
 </style>
-<Layout title={post.data.title}>
+<Layout {...seo}>
   <div class="card-container">
   <article class="card">
     <header class="card-header">

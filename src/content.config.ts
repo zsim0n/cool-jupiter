@@ -15,9 +15,4 @@ const posts = defineCollection({
     }),
 });
 
-const rss = defineCollection({
-  loader: glob({ pattern: "**/*.mdx", base: "./src/posts" }),
-  schema: rssSchema,
-});
-
-export const collections = { posts, rss };
+export const collections = { posts };
