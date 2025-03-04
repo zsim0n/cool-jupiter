@@ -3,6 +3,7 @@
   "description": "zoltansimon.me Astro version",
   "type": "module",
   "version": "0.0.1",
+  "license":"MIT",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
