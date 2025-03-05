@@ -3,10 +3,11 @@ import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 
 const seo = {
-  title: "Zoltan Simon – Software Design & Engineering Insights",
-  description:"Explore expert articles on software engineering, Low-Code/No-Code development, JAMStack innovations, and platform-as-code strategies. Empower your digital transformation with actionable insights and proven tips for modern developers.",
-  image:"hello.png"
-}
+    title: "Zoltan Simon – Software Design & Engineering Insights",
+    description:
+        "Explore expert articles on software engineering, Low-Code/No-Code development, JAMStack innovations, and platform-as-code strategies. Empower your digital transformation with actionable insights and proven tips for modern developers.",
+    image: "hello.png",
+};
 ---
 
 <style>
@@ -19,18 +20,56 @@ const seo = {
     }
     /* Left column with background image */
     .left {
-        background: url("/me.jpg") no-repeat center center;
+        background: url("/me.jpg") no-repeat top left;
         background-size: cover;
         padding: 0;
         margin: 0;
     }
     .right {
-        padding-left:1em;
+        position: relative;
+        padding-left: 0em;
     }
     .me-nav {
         margin: 0;
         padding-left: 1em;
     }
+    /* "Hello" element positioned at the top left of the right column */
+    .me-hello {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        line-height: 1; /* Start here and adjust as needed */
+        transform: none;
+        font-size: 10em;
+        color: lightgray;
+        z-index: -1;
+        font-weight: bold;
+    }
+    /* Increase the first letter size */
+    .me-hello::first-letter {
+        font-size: 3em;
+    }
+    /* Content placed above the "Hello" text */
+    .me-banner {
+  position: relative;
+  z-index: 10;
+  display: flex;             /* Use flexbox layout */
+  align-items: center;       /* Vertically center content */
+  justify-content: center;   /* Horizontally center content */
+  text-align: center;
+  margin-top: 10em;
+  padding: 0.5em;
+  background-color: #C1E1C1CC;/* Semi-transparent light goldenrod yellow */
+  font-variant: small-caps;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;            /* Base font size */
+  white-space: normal;
+  letter-spacing: 0.1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  height: 8em;               /* Fixed banner height */
+}
+
 </style>
 <Layout {...seo}>
     <section class="me-nav">
@@ -46,12 +85,21 @@ const seo = {
             <!-- Left column content (background image visible) -->
         </div>
         <div class="right">
-            <h3>Hello!</h3>
+            <div class="me-hello">Hello</div>
+            <div class="me-banner">
+                Innovative Digital Strategist | Architect | AI Transformation
+                Advocate | Tech Entrepreneur | Passionate about great software,
+                team, and purpose
+            </div>
+            <br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br />
             <!-- Right column content -->
         </div>
     </section>
     <footer>
-        © 2025 zoltansimon.me. Code licensed under MIT.
-        Content licensed under CC BY-NC-SA 4.0 unless otherwise noted. For commercial use, please contact hello@zoltansimon.me.
+      <i style="color:lightgray">  © 2025 zoltansimon.me. Code licensed under MIT. Content licensed under
+        CC BY-NC-SA 4.0 unless otherwise noted. For commercial use, please
+        contact hello@zoltansimon.me.</i>
     </footer>
 </Layout>
