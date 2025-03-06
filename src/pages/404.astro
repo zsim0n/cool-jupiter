@@ -1,0 +1,80 @@
+---
+import type { ACTION_ERROR_CODES } from "astro:actions";
+import Root from "../layouts/Root.astro";
+const seo = {
+    title : "(-.-)Zzz..."
+}
+---
+<style>
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    font-family: sans-serif;
+  }
+  .container {
+    text-align: center;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #333;
+    font-variant: small-caps;
+  }
+  .big {
+    font-size: 20rem;
+    color: #666;
+  }
+  @font-face {
+    font-family: 'ZX81';
+    src: url('/zx81.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  p {
+    color: #666;
+  }
+  .zx81-code {
+    font-family: 'ZX81', monospace;
+    color: #000;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    white-space: pre; /* preserve spacing for fixed-width effect */
+    display: inline-block;
+    /* Ensuring a pixelated effect */
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+  }
+</style>
+
+<Root {...seo}>
+  <script type="module">
+    let count = 3;
+    const countdownEl = document.getElementById('countdown');
+    countdownEl.textContent = count;
+    const interval = setInterval(() => {
+      count--;
+      if (count <= 0) {
+        clearInterval(interval);
+        window.location.href = "/";
+      } else {
+        countdownEl.textContent = count;
+      }
+    }, 1000);
+  </script>
+  
+  <div class="container">
+    <i class="ti ti-error-404 big"></i>
+    <!-- Huge Tabler "404" Icon (placeholder) -->
+    
+    <h1>Whoops! Something went wrong...</h1>
+    <p>
+      <span class="zx81-code">GOTO 10</span> in <span id="countdown">3</span> seconds...
+    </p>
+  </div>
+</Root>

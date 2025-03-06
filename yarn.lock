@@ -512,6 +512,11 @@
   resolved "https://registry.yarnpkg.com/@oslojs/encoding/-/encoding-1.1.0.tgz#55f3d9a597430a01f2a5ef63c6b42f769f9ce34e"
   integrity sha512-70wQhgYmndg4GCPxPPxPGevRKqTIJ2Nh4OkiMWmDAVYsTQ+Ta7Sq+rPevXyXGdzr30/qZBnyOalCszoMxlyldQ==
 
+"@picocss/pico@^2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@picocss/pico/-/pico-2.0.6.tgz#16e6d253366ab245e67bac6faa95a45edcac4124"
+  integrity sha512-/d8qsykowelD6g8k8JYgmCagOIulCPHMEc2NC4u7OjmpQLmtSetLhEbt0j1n3fPNJVcrT84dRp0RfJBn3wJROA==
+
 "@rollup/pluginutils@^5.1.4":
   version "5.1.4"
   resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-5.1.4.tgz#bb94f1f9eaaac944da237767cdfee6c5b2262d4a"
@@ -671,6 +676,18 @@
   version "10.0.2"
   resolved "https://registry.yarnpkg.com/@shikijs/vscode-textmate/-/vscode-textmate-10.0.2.tgz#a90ab31d0cc1dfb54c66a69e515bf624fa7b2224"
   integrity sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==
+
+"@tabler/icons-webfont@^3.31.0":
+  version "3.31.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons-webfont/-/icons-webfont-3.31.0.tgz#5a3d04929176879247a457590cf163f46fbc7480"
+  integrity sha512-0a3Uhj9nKU5kYz6/MUIGuX7kRbbrnOvVL3LGnbIcW/fmEQMgVRN0lkXdeIVkIL6/JKDzI2zSm3X5I+hLIpzLog==
+  dependencies:
+    "@tabler/icons" "3.31.0"
+
+"@tabler/icons@3.31.0":
+  version "3.31.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-3.31.0.tgz#92d39dc336f2e3e312170420b00ffe9ca474925e"
+  integrity sha512-dblAdeKY3+GA1U+Q9eziZ0ooVlZMHsE8dqP0RkwvRtEsAULoKOYaCUOcJ4oW1DjWegdxk++UAt2SlQVnmeHv+g==
 
 "@types/acorn@^4.0.0":
   version "4.0.6"

@@ -16,5 +16,10 @@
     "@astrojs/sitemap": "^3.2.1",
     "astro": "^5.4.1",
     "astro-seo": "^0.8.4"
+  },
+  "_comment": {
+    "_": "Implicit dependencies - CDN inclusions in Layout",
+    "@picocss/pico": "^2.0.6", 
+    "@tabler/icons-webfont": "^3.31.0"
   }
 }

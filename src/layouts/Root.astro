@@ -1,0 +1,59 @@
+---
+const { title,desciption,image } = Astro.props;
+import SEOHead from "../components/SEOHead.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <SEOHead {...Astro.props} />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Things - zoltansimon.me"
+      href={new URL("rss.xml", Astro.site)}
+    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>{title}</title>
+    <!-- Include PicoCSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css"
+    />
+    <!-- Tabler Icons Webfont -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    <style is:global>
+      :root {
+        --pico-font-size: 80%;
+        --pico-text-decoration: none;
+      }
+      a,
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
+        --pico-text-decoration: none;
+        text-decoration: var(--pico-text-decoration);
+      }
+      [data-theme="dark"] {
+        --pico-card-background-color: var(--pico-color-slate-900);
+        .post-thumbnail {
+          filter: sepia(1) brightness(0.7);
+        }
+      }
+    </style>
+  </head>
+  <body>
+        <slot />
+  </body>
+</html>
