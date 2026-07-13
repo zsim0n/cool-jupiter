@@ -29,13 +29,12 @@ This project follows the [Astro project structure guidelines](https://docs.astro
 
 ## 🧞 Usage
 
-This project uses Yarn to manage dependencies and scripts. The typical commands are:
+This project uses npm to manage dependencies and scripts. The typical commands are:
 
-- `yarn` to install all dependencies.
-- `yarn dev` to run the development server (usually available at [http://localhost:4321](http://localhost:4321)).
-- `yarn build` to create a production build.
-
-For more details on Yarn commands, check out the [Yarn Documentation](https://classic.yarnpkg.com/en/docs/).
+- `npm install` to install all dependencies.
+- `npm run dev` to run the development server (usually available at [http://localhost:4321](http://localhost:4321)).
+- `npm run build` to create a production build.
+- `npm run preview` to preview the production build locally.
 
 
 ## ☁️ Hosted on Netlify

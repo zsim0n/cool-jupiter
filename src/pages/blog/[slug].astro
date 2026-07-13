@@ -4,7 +4,6 @@ import Layout from '../../layouts/Layout.astro';
 import Blockquote from '../../components/mdx/BlockQuote.astro';
 import Figure from '../../components/mdx/Figure.astro';
 export const components = {blockquote: Blockquote, img:Figure}
-import { Debug } from 'astro:components';
 
 export async function getStaticPaths() {
 	const posts = await getCollection('posts');
@@ -20,9 +19,14 @@ const {post} = Astro.props;
 const {Content} = await render(post);
 const seo = {
   title: post.data.title,
-  description:post.data.excerpt,
-  image:post.data.thumbnail.src
+  description: post.data.excerpt,
+  image: post.data.thumbnail.src,
+  author: "Zoltan Simon",
+  publishDate: post.data.date.toISOString(),
+  isArticle: true,
 }
+
+
 
 ---
 <style>
@@ -60,7 +64,7 @@ const seo = {
   .card-overlay {
   position: absolute;
   bottom: 5px; /* Adjust for desired overlap */
-  background-color: var(--pico-background-color); 
+  background-color: var(--pico-background-color);
   padding: 1rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   border-radius: 4px;

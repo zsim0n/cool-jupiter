@@ -55,5 +55,9 @@ import SEOHead from "../components/SEOHead.astro";
   </head>
   <body>
         <slot />
+    <!-- Cloudflare Web Analytics -->
+    {import.meta.env.PROD && (
+      <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "ceff686b3cec402481118c10c300783d"}'></script>
+    )}
   </body>
 </html>

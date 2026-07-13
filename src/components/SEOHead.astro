@@ -1,35 +1,141 @@
 ---
 import { SEO } from 'astro-seo';
 
-const { title, description, image } = Astro.props;
-console.log(Astro.props.image)
-const url = new URL(Astro.request.url, Astro.site).href;
-const default_image = new URL('hello.png', Astro.site).href;
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  author?: string;
+  publishDate?: string;
+  tags?: string[];
+  isArticle?: boolean;
+}
+
+const {
+  title = "Zoltan Simon – Software Design & Engineering Insights",
+  description = "Explore expert articles on software engineering, Low-Code/No-Code development, JAMStack innovations, and platform-as-code strategies.",
+  image,
+  author = "Zoltan Simon",
+  publishDate,
+  tags = [],
+  isArticle = false,
+} = Astro.props;
+
+const siteUrl = "https://zoltansimon.me";
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
+
+// Ensure absolute image URL
+const absoluteImage = image
+  ? image.startsWith('http')
+    ? image
+    : new URL(image, siteUrl).href
+  : new URL('/hello.png', siteUrl).href;
+
+// Build Open Graph config based on whether it's an article
+interface OpenGraphConfig {
+  basic: {
+    title: string;
+    type: string;
+    image: string;
+    url: string;
+  };
+  article?: {
+    publishedTime: string;
+    authors: string[];
+    tags?: string[];
+  };
+}
+
+const openGraphConfig: OpenGraphConfig = {
+  basic: {
+    title: title,
+    type: isArticle ? "article" : "website",
+    image: absoluteImage,
+    url: canonicalUrl,
+  }
+};
+
+if (isArticle) {
+  openGraphConfig.article = {
+    publishedTime: publishDate || new Date().toISOString(),
+    authors: [author],
+    ...(tags.length > 0 && { tags: tags })
+  };
+}
+
+// JSON-LD Schema for articles
+const articleSchema = isArticle ? {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": title,
+  "description": description,
+  "image": absoluteImage,
+  "datePublished": publishDate || new Date().toISOString(),
+  "author": {
+    "@type": "Person",
+    "name": author,
+    "url": siteUrl
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zoltan Simon",
+    "logo": {
+      "@type": "ImageObject",
+      "url": new URL('/favicon.ico', siteUrl).href
+    }
+  }
+} : null;
+
+// JSON-LD Schema for organization (on homepage)
+const organizationSchema = !isArticle ? {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Zoltan Simon",
+  "url": siteUrl,
+  "logo": new URL('/hello.png', siteUrl).href,
+  "description": description,
+  "sameAs": [
+    "https://github.com/zsim0n",
+    "https://linkedin.com/in/zoltansimon27",
+    "https://zsim0n.medium.com"
+  ]
+} : null;
 ---
+
 <SEO
-      title={title || "A Very Descriptive Title"}
-      description={description || "A heavily optimized description full of well-researched keywords."}
-      openGraph={{
-        basic: {
-          title: title || "A Very Descriptive Title",
-          type: "article",
-          image: image || default_image,
-        }
-      }}
-      extend={{
-        // extending the default link tags
-        link: [{ rel: "icon", href: "/favicon.ico" }],
-        // extending the default meta tags
-        meta: [
-          {
-            name: "twitter:image",
-            content: image || default_image,
-          },
-          { name: "twitter:title", content: title || "A Very Descriptive Title" },
-          { name: "twitter:description", content: "Agent" },
-        ],
-      }}
-    />
+  title={title}
+  description={description}
+  canonical={canonicalUrl}
+  openGraph={openGraphConfig}
+  twitter={{
+    card: "summary_large_image",
+    creator: "@zsim0n",
+    title: title,
+    image: absoluteImage,
+    imageAlt: title,
+    description: description,
+  }}
+  extend={{
+    link: [
+      { rel: "icon", href: "/favicon.ico" }
+    ],
+    meta: [
+      {
+        name: "og:site_name",
+        content: "Zoltan Simon – Things",
+      },
+      {
+        name: "author",
+        content: author,
+      }
+    ],
+  }}
+/>
 
+{articleSchema && (
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+)}
 
-
+{organizationSchema && (
+  <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+)}
