@@ -36,6 +36,31 @@ import SEOHead from "../components/SEOHead.astro";
       :root {
         --pico-font-size: 80%;
         --pico-text-decoration: none;
+
+        /* Brand palette — from the LinkedIn header */
+        --brand-laser:    #FF3B14;
+        --brand-ember:    #FF6A2C;
+        --brand-amber:    #E0A45C;
+        --brand-paper:    #F1ECE4;
+        --brand-ink:      #2B2B2E;
+        --brand-charcoal: #16161A;
+        --brand-slate:    #1E1E24;
+
+        /* Header bar — paper in light mode (flips to charcoal in dark) */
+        --header-bg: var(--brand-paper);
+        --header-fg: var(--brand-ink);
+      }
+
+      /* Point Pico's accent at the laser (light mode).
+         Uses Pico's own selector specificity so it wins the cascade. */
+      :root:not([data-theme="dark"]) {
+        --pico-primary:                  var(--brand-laser);
+        --pico-primary-hover:            #E62E0A;
+        --pico-primary-focus:            rgba(255, 59, 20, .25);
+        --pico-primary-background:       var(--brand-laser);
+        --pico-primary-hover-background: #E62E0A;
+        --pico-primary-inverse:          #fff;
+        --pico-primary-underline:        rgba(255, 59, 20, .4);
       }
       a,
       a:link,
@@ -45,10 +70,29 @@ import SEOHead from "../components/SEOHead.astro";
         --pico-text-decoration: none;
         text-decoration: var(--pico-text-decoration);
       }
+      /* Homepage card text: readable ink, laser only on hover.
+         Global (not scoped) so the dark override below can apply. */
+      .post-tile h3,
+      .post-tile p {
+        color: var(--brand-ink);
+      }
       [data-theme="dark"] {
-        --pico-card-background-color: var(--pico-color-slate-900);
+        --pico-primary:                  var(--brand-ember);
+        --pico-primary-hover:            #FF854D;
+        --pico-primary-focus:            rgba(255, 106, 44, .3);
+        --pico-primary-background:       var(--brand-laser);
+        --pico-primary-hover-background: var(--brand-ember);
+
+        --pico-background-color:      var(--brand-charcoal);
+        --pico-card-background-color: var(--brand-slate);
+        --header-bg: var(--brand-charcoal);
+        --header-fg: var(--brand-paper);
         .post-thumbnail {
           filter: sepia(1) brightness(0.7);
+        }
+        .post-tile h3,
+        .post-tile p {
+          color: var(--brand-paper);
         }
       }
     </style>

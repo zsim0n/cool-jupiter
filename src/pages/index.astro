@@ -30,6 +30,15 @@ const seo = {
   }
   .post-tile:hover {
     transform: none;
+    border-color: var(--brand-laser);
+  }
+  /* Card text colors live in Root.astro's global style so the
+     [data-theme="dark"] override works (scoped styles can't target it). */
+  .post-tile time {
+    color: var(--pico-muted-color);
+  }
+  .post-tile:hover h3 {
+    color: var(--brand-laser);
   }
   .post-thumbnail {
     width: 100%;

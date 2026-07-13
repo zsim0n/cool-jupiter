@@ -7,7 +7,7 @@ const { title,description,image } = Astro.props;
 ---
 <Root {...Astro.props}>
   <div class="container-fluid">
-    <header style="background-color:rgb(255, 56, 152)">
+    <header style="background:var(--header-bg); border-bottom:3px solid var(--brand-laser); color:var(--header-fg);">
       <Header />
     </header>
     <main>

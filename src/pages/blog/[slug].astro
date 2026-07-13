@@ -71,7 +71,7 @@ const seo = {
   width: 90%;
   z-index: 10; /* Bring overlay to the top */
 }
-[data-theme="dark"] {√
+[data-theme="dark"] {
   .card-overlay {
     --pico-background-color:black;
   }
@@ -90,8 +90,21 @@ const seo = {
   .card-body {
     padding: 2rem 1rem 1rem;
   }
+  /* Breadcrumb directly under the header line (matches the about page) */
+  .page-nav {
+    margin: 0;
+    padding-left: 1em;
+  }
 </style>
 <Layout {...seo}>
+  <section class="page-nav">
+    <nav aria-label="breadcrumb" class="breadcrumb">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li>{post.data.title}</li>
+      </ul>
+    </nav>
+  </section>
   <div class="card-container">
   <article class="card">
     <header class="card-header">
@@ -107,12 +120,6 @@ const seo = {
 })}</p>
       </div>
     </header>
-    <nav aria-label="breadcrumb" class="breadcrumb">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li>{post.data.title}</li>
-      </ul>
-    </nav>
     <div class="card-body">
       <Content components={{...components}} />
     </div>
