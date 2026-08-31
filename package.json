@@ -18,7 +18,7 @@
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.3",
     "astro": "^7.0.7",
-    "astro-seo": "^1.1.0"
+    "astro-seo": "^1.2.0"
   },
   "_comment": {
     "_": "Implicit dependencies - CDN inclusions in Layout",
