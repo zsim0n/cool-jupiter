@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260"><style>.bg{fill:#fafafa}.b{fill:#fff;stroke:#1b1b1b;stroke-width:1.5}.x{fill:#fff;stroke:#FF3B14;stroke-width:2}.d{fill:#fff;stroke:#FF3B14;stroke-width:1.5;stroke-dasharray:5 4}.t{font:600 14px system-ui,sans-serif;fill:#1b1b1b}.s{font:12px system-ui,sans-serif;fill:#555}.h{font:700 15px system-ui,sans-serif;fill:#FF3B14}.l{stroke:#1b1b1b;stroke-width:1.5;fill:none;marker-end:url(#m)}.ld{stroke:#999;stroke-width:1.2;fill:none;stroke-dasharray:4 4}.lx{stroke:#FF3B14;stroke-width:1.5;fill:none;stroke-dasharray:5 4;marker-end:url(#mx)}</style><defs><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1b1b1b"/></marker><marker id="mx" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#FF3B14"/></marker></defs>
+<rect class="bg" width="800" height="260"/>
+<line x1="400" y1="20" x2="400" y2="240" stroke="#ddd"/>
+<text class="h" x="20" y="35">Command: one owner acts</text>
+<rect class="b" x="20" y="100" width="110" height="56" rx="6"/><text class="t" x="32" y="124">Checkout</text><text class="s" x="32" y="143">ReserveStock</text>
+<rect class="b" x="160" y="100" width="100" height="56" rx="6"/><text class="t" x="172" y="124">Queue</text><text class="s" x="172" y="143">retries</text>
+<rect class="x" x="290" y="70" width="95" height="56" rx="6"/><text class="t" x="300" y="94">Inventory</text><text class="s" x="300" y="113">the one owner</text>
+<rect class="d" x="290" y="160" width="95" height="46" rx="6"/><text class="t" x="300" y="188">Dead letter</text>
+<path class="l" d="M130,128H158"/><path class="l" d="M260,120L288,100"/><path class="lx" d="M260,138L288,180"/>
+<text class="h" x="420" y="35">Event: anyone may react</text>
+<rect class="b" x="420" y="100" width="110" height="56" rx="6"/><text class="t" x="432" y="124">Orders</text><text class="s" x="432" y="143">OrderPlaced</text>
+<rect class="x" x="560" y="100" width="100" height="56" rx="6"/><text class="t" x="572" y="124">Topic</text><text class="s" x="572" y="143">retained</text>
+<rect class="b" x="690" y="60" width="95" height="40" rx="6"/><text class="t" x="700" y="85">Billing</text>
+<rect class="b" x="690" y="108" width="95" height="40" rx="6"/><text class="t" x="700" y="133">Email</text>
+<rect class="b" x="690" y="156" width="95" height="40" rx="6"/><text class="t" x="700" y="181">Analytics</text>
+<path class="l" d="M530,128H558"/><path class="l" d="M660,128L688,80"/><path class="l" d="M660,128H688"/><path class="l" d="M660,128L688,176"/>
+<text class="s" x="420" y="225">The producer doesn't know, or care, who's listening.</text>
+<text class="s" x="20" y="225">Not a broadcast. One handler, one outcome.</text>
+</svg>

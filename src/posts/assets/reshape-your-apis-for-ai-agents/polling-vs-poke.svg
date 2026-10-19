@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300"><style>.bg{fill:#fafafa}.b{fill:#fff;stroke:#1b1b1b;stroke-width:1.5}.x{fill:#fff;stroke:#FF3B14;stroke-width:2}.d{fill:#fff;stroke:#FF3B14;stroke-width:1.5;stroke-dasharray:5 4}.t{font:600 14px system-ui,sans-serif;fill:#1b1b1b}.s{font:12px system-ui,sans-serif;fill:#555}.h{font:700 15px system-ui,sans-serif;fill:#FF3B14}.l{stroke:#1b1b1b;stroke-width:1.5;fill:none;marker-end:url(#m)}.ld{stroke:#999;stroke-width:1.2;fill:none;stroke-dasharray:4 4}.lx{stroke:#FF3B14;stroke-width:1.5;fill:none;stroke-dasharray:5 4;marker-end:url(#mx)}</style><defs><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1b1b1b"/></marker><marker id="mx" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#FF3B14"/></marker></defs>
+<rect class="bg" width="800" height="300"/>
+<line x1="400" y1="20" x2="400" y2="280" stroke="#ddd"/>
+<text class="h" x="20" y="35">Polling</text>
+<rect class="b" x="20" y="60" width="90" height="180" rx="6"/><text class="t" x="34" y="155">Agent</text>
+<rect class="b" x="290" y="60" width="90" height="180" rx="6"/><text class="t" x="304" y="155">API</text>
+<path class="l" d="M110,85H288"/><text class="s" text-anchor="middle" x="200" y="80">changed?</text>
+<path class="l" d="M290,110H112"/><text class="s" text-anchor="middle" x="200" y="105">no</text>
+<path class="l" d="M110,140H288"/><text class="s" text-anchor="middle" x="200" y="135">changed?</text>
+<path class="l" d="M290,165H112"/><text class="s" text-anchor="middle" x="200" y="160">no</text>
+<path class="l" d="M110,195H288"/><text class="s" text-anchor="middle" x="200" y="190">changed?</text>
+<path class="l" d="M290,220H112"/><text class="s" text-anchor="middle" x="200" y="215">yes, finally</text>
+<text class="s" x="20" y="268">Every 5 s = 17,280 requests a day. Most say "no".</text>
+<text class="h" x="420" y="35">POKE</text>
+<rect class="b" x="420" y="60" width="90" height="180" rx="6"/><text class="t" x="434" y="155">Agent</text>
+<rect class="x" x="690" y="60" width="90" height="180" rx="6"/><text class="t" x="702" y="148">Event log</text><text class="s" x="702" y="166">per customer</text>
+<path class="lx" d="M690,100H512" style="stroke-dasharray:none"/><text class="s" text-anchor="middle" x="600" y="94">email.delivered (push)</text>
+<path class="l" d="M510,185H688"/><text class="s" text-anchor="middle" x="600" y="179">GET /events?after=cursor</text>
+<path class="l" d="M690,215H512"/><text class="s" text-anchor="middle" x="600" y="209">only what's new</text>
+<text class="s" x="420" y="268">One event when something happens. Catch up when ready.</text>
+</svg>

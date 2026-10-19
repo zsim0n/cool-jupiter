@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380"><style>.bg{fill:#fafafa}.b{fill:#fff;stroke:#1b1b1b;stroke-width:1.5}.x{fill:#fff;stroke:#FF3B14;stroke-width:2}.d{fill:#fff;stroke:#FF3B14;stroke-width:1.5;stroke-dasharray:5 4}.t{font:600 14px system-ui,sans-serif;fill:#1b1b1b}.s{font:12px system-ui,sans-serif;fill:#555}.h{font:700 15px system-ui,sans-serif;fill:#FF3B14}.l{stroke:#1b1b1b;stroke-width:1.5;fill:none;marker-end:url(#m)}.ld{stroke:#999;stroke-width:1.2;fill:none;stroke-dasharray:4 4}.lx{stroke:#FF3B14;stroke-width:1.5;fill:none;stroke-dasharray:5 4;marker-end:url(#mx)}</style><defs><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1b1b1b"/></marker><marker id="mx" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#FF3B14"/></marker></defs>
+<rect class="bg" width="800" height="380"/>
+<polygon points="530,190 465,77 335,77 270,190 335,303 465,303" fill="#fff" stroke="#FF3B14" stroke-width="2.5"/>
+<text class="t" x="400" y="118" text-anchor="middle">Order service</text>
+<text class="s" x="400" y="136" text-anchor="middle">one data domain</text>
+<rect class="b" x="340" y="152" width="120" height="36" rx="6"/><text class="t" x="400" y="175" text-anchor="middle">Domain logic</text>
+<rect class="b" x="340" y="198" width="120" height="36" rx="6"/><text class="t" x="400" y="221" text-anchor="middle">Own data</text>
+<text class="s" x="400" y="262" text-anchor="middle">one owner</text>
+<text class="s" x="400" y="279" text-anchor="middle">one deployment</text>
+<rect x="264" y="184" width="12" height="12" fill="#FF3B14"/>
+<rect x="491" y="128" width="12" height="12" fill="#FF3B14"/>
+<rect x="491" y="241" width="12" height="12" fill="#FF3B14"/>
+<rect class="b" x="30" y="160" width="190" height="60" rx="6"/><text class="t" x="44" y="185">API</text><text class="s" x="44" y="205">commands &amp; queries</text>
+<path class="l" d="M222,190H262"/>
+<text class="s" x="224" y="180">OpenAPI</text>
+<rect class="b" x="590" y="60" width="190" height="60" rx="6"/><text class="t" x="604" y="85">Business events</text><text class="s" x="604" y="105">OrderPlaced, OrderShipped</text>
+<path class="l" d="M503,134L588,95"/><text class="s" x="545" y="132">AsyncAPI</text>
+<rect class="b" x="590" y="260" width="190" height="60" rx="6"/><text class="t" x="604" y="285">Data product</text><text class="s" x="604" y="305">orders table (Delta)</text>
+<path class="l" d="M503,247L588,285"/><text class="s" x="540" y="254">data contract</text>
+<text class="s" x="30" y="358">One domain, three interfaces, each with its own contract. Behind them, the team can change anything.</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480"><style>.bg{fill:#fafafa}.b{fill:#fff;stroke:#1b1b1b;stroke-width:1.5}.x{fill:#fff;stroke:#FF3B14;stroke-width:2}.d{fill:#fff;stroke:#FF3B14;stroke-width:1.5;stroke-dasharray:5 4}.t{font:600 14px system-ui,sans-serif;fill:#1b1b1b}.s{font:12px system-ui,sans-serif;fill:#555}.h{font:700 15px system-ui,sans-serif;fill:#FF3B14}.l{stroke:#1b1b1b;stroke-width:1.5;fill:none;marker-end:url(#m)}.ld{stroke:#999;stroke-width:1.2;fill:none;stroke-dasharray:4 4}.lx{stroke:#FF3B14;stroke-width:1.5;fill:none;stroke-dasharray:5 4;marker-end:url(#mx)}</style><defs><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1b1b1b"/></marker><marker id="mx" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#FF3B14"/></marker></defs>
+<rect class="bg" width="800" height="480"/>
+<path d="M172,95H628" stroke="#1b1b1b" stroke-width="1.5"/><text class="s" x="400" y="88" text-anchor="middle">API</text>
+<path d="M172,385H628" stroke="#1b1b1b" stroke-width="1.5"/><text class="s" x="400" y="402" text-anchor="middle">API</text>
+<path d="M110,149V331" stroke="#FF3B14" stroke-width="1.8" stroke-dasharray="6 4"/><text class="s" x="28" y="244" fill="#FF3B14">OrderPlaced</text>
+<path d="M690,149V331" stroke="#FF3B14" stroke-width="1.8" stroke-dasharray="6 4"/><text class="s" x="700" y="244" fill="#FF3B14">PaymentTaken</text>
+<rect x="235" y="135" width="330" height="210" rx="18" fill="#fff6f3" stroke="#f0c4b8" stroke-dasharray="5 4"/><text class="h" x="400" y="160" text-anchor="middle">Data mesh</text>
+<path class="ld" d="M322,206L372,240"/><path class="ld" d="M478,206L428,240"/><path class="ld" d="M322,288L372,262"/><path class="ld" d="M478,288L428,262"/>
+<rect x="252" y="176" width="104" height="32" rx="16" fill="#fff" stroke="#1b1b1b" stroke-width="1.5" stroke-dasharray="4 3"/><text class="s" x="304" y="196" text-anchor="middle" style="font-weight:600;fill:#1b1b1b">Orders</text>
+<rect x="444" y="176" width="104" height="32" rx="16" fill="#fff" stroke="#1b1b1b" stroke-width="1.5" stroke-dasharray="4 3"/><text class="s" x="496" y="196" text-anchor="middle" style="font-weight:600;fill:#1b1b1b">Customers</text>
+<rect x="348" y="235" width="104" height="32" rx="16" fill="#fff" stroke="#1b1b1b" stroke-width="1.5" stroke-dasharray="4 3"/><text class="s" x="400" y="255" text-anchor="middle" style="font-weight:600;fill:#1b1b1b">Order insights</text>
+<rect x="252" y="290" width="104" height="32" rx="16" fill="#fff" stroke="#1b1b1b" stroke-width="1.5" stroke-dasharray="4 3"/><text class="s" x="304" y="310" text-anchor="middle" style="font-weight:600;fill:#1b1b1b">Inventory</text>
+<rect x="444" y="290" width="104" height="32" rx="16" fill="#fff" stroke="#1b1b1b" stroke-width="1.5" stroke-dasharray="4 3"/><text class="s" x="496" y="310" text-anchor="middle" style="font-weight:600;fill:#1b1b1b">Payments</text>
+<path d="M141,141L270,178" stroke="#999" stroke-width="1.3"/><path d="M659,141L530,178" stroke="#999" stroke-width="1.3"/><path d="M141,339L270,322" stroke="#999" stroke-width="1.3"/><path d="M659,339L530,322" stroke="#999" stroke-width="1.3"/>
+<path d="M659,120Q600,215 452,243" stroke="#999" stroke-width="1.3" fill="none"/>
+<polygon points="172,95 141,41 79,41 48,95 79,149 141,149" fill="#fff" stroke="#FF3B14" stroke-width="2"/><text class="t" x="110" y="91" text-anchor="middle">Order service</text><text class="s" x="110" y="109" text-anchor="middle">API · events · data</text>
+<polygon points="752,95 721,41 659,41 628,95 659,149 721,149" fill="#fff" stroke="#FF3B14" stroke-width="2"/><text class="t" x="690" y="91" text-anchor="middle">Customer</text><text class="s" x="690" y="109" text-anchor="middle">API · events · data</text>
+<polygon points="172,385 141,331 79,331 48,385 79,439 141,439" fill="#fff" stroke="#FF3B14" stroke-width="2"/><text class="t" x="110" y="381" text-anchor="middle">Fulfillment</text><text class="s" x="110" y="399" text-anchor="middle">API · events · data</text>
+<polygon points="752,385 721,331 659,331 628,385 659,439 721,439" fill="#fff" stroke="#FF3B14" stroke-width="2"/><text class="t" x="690" y="381" text-anchor="middle">Billing</text><text class="s" x="690" y="399" text-anchor="middle">API · events · data</text>
+<line x1="20" y1="462" x2="50" y2="462" stroke="#1b1b1b" stroke-width="1.5"/><text class="s" x="56" y="466">API</text>
+<line x1="100" y1="462" x2="130" y2="462" stroke="#FF3B14" stroke-width="1.8" stroke-dasharray="6 4"/><text class="s" x="136" y="466">business event</text>
+<rect x="240" y="454" width="34" height="16" rx="8" fill="#fff" stroke="#1b1b1b" stroke-dasharray="4 3"/><text class="s" x="280" y="466">data product</text>
+<line x1="370" y1="462" x2="400" y2="462" stroke="#999" stroke-width="1.3"/><text class="s" x="406" y="466">owns / reads</text>
+
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360"><style>.bg{fill:#fafafa}.b{fill:#fff;stroke:#1b1b1b;stroke-width:1.5}.x{fill:#fff;stroke:#FF3B14;stroke-width:2}.d{fill:#fff;stroke:#FF3B14;stroke-width:1.5;stroke-dasharray:5 4}.t{font:600 14px system-ui,sans-serif;fill:#1b1b1b}.s{font:12px system-ui,sans-serif;fill:#555}.h{font:700 15px system-ui,sans-serif;fill:#FF3B14}.l{stroke:#1b1b1b;stroke-width:1.5;fill:none;marker-end:url(#m)}.ld{stroke:#999;stroke-width:1.2;fill:none;stroke-dasharray:4 4}.lx{stroke:#FF3B14;stroke-width:1.5;fill:none;stroke-dasharray:5 4;marker-end:url(#mx)}</style><defs><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1b1b1b"/></marker><marker id="mx" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#FF3B14"/></marker></defs>
+<rect class="bg" width="800" height="360"/>
+<rect class="b" x="50" y="20" width="140" height="44" rx="6"/><text class="t" x="120" y="47" text-anchor="middle">Agent</text>
+<rect class="b" x="320" y="20" width="160" height="44" rx="6"/><text class="t" x="400" y="40" text-anchor="middle">MCP server</text><text class="s" text-anchor="middle" x="400" y="56">over your API</text>
+<rect class="x" x="610" y="20" width="140" height="44" rx="6"/><text class="t" x="680" y="40" text-anchor="middle">Event log</text><text class="s" text-anchor="middle" x="680" y="56">POKE</text>
+<path class="ld" d="M120,64V320"/><path class="ld" d="M400,64V320"/><path class="ld" d="M680,64V320"/>
+<path class="l" d="M120,100H398"/><text class="s" text-anchor="middle" x="260" y="92">1. start_export (MCP tool)</text>
+<path class="l" d="M400,140H122"/><text class="s" text-anchor="middle" x="260" y="132">2. 202 Accepted · op_123</text>
+<text class="s" text-anchor="middle" x="260" y="166" style="font-style:italic">no status polling</text>
+<path class="l" d="M400,195H678"/><text class="s" text-anchor="middle" x="540" y="187">3. report.export.completed (op_123)</text>
+<path d="M680,235H122" stroke="#FF3B14" stroke-width="1.8" fill="none" marker-end="url(#mx)"/><text class="s" text-anchor="middle" x="400" y="227" fill="#FF3B14">4. push: signed webhook</text>
+<path class="l" d="M120,275H678" style="stroke-dasharray:5 4"/><text class="s" text-anchor="middle" x="400" y="267">or pull: get_events(after=cursor)</text>
+<path class="l" d="M680,300H122" style="stroke-dasharray:5 4"/><text class="s" text-anchor="middle" x="400" y="295" dy="17">only what's new</text>
+<text class="h" x="400" y="350" text-anchor="middle">MCP lets agents act. POKE tells them what happened.</text>
+</svg>

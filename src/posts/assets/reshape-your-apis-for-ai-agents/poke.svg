@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 310"><style>.bg{fill:#fafafa}.b{fill:#fff;stroke:#1b1b1b;stroke-width:1.5}.x{fill:#fff;stroke:#FF3B14;stroke-width:2}.d{fill:#fff;stroke:#FF3B14;stroke-width:1.5;stroke-dasharray:5 4}.t{font:600 14px system-ui,sans-serif;fill:#1b1b1b}.s{font:12px system-ui,sans-serif;fill:#555}.h{font:700 15px system-ui,sans-serif;fill:#FF3B14}.l{stroke:#1b1b1b;stroke-width:1.5;fill:none;marker-end:url(#m)}.ld{stroke:#999;stroke-width:1.2;fill:none;stroke-dasharray:4 4}.lx{stroke:#FF3B14;stroke-width:1.5;fill:none;stroke-dasharray:5 4;marker-end:url(#mx)}</style><defs><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1b1b1b"/></marker><marker id="mx" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#FF3B14"/></marker></defs>
+<rect class="bg" width="800" height="310"/>
+<rect class="b" x="20" y="50" width="150" height="70" rx="6"/><text class="t" x="34" y="78">Your API</text><text class="s" x="34" y="98">as it is today</text>
+<rect class="b" x="20" y="170" width="150" height="70" rx="6"/><text class="t" x="34" y="198">State change</text><text class="s" x="34" y="218">+ event, one tx</text>
+<path class="l" d="M95,120V168"/>
+<rect class="x" x="215" y="110" width="210" height="110" rx="6"/><text class="t" x="229" y="136">Event log per customer</text><text class="s" x="229" y="158">append-only</text><text class="s" x="229" y="176">id · type · timestamp · data</text><text class="s" x="229" y="194">monotonic cursor</text>
+<path class="l" d="M170,205L213,180"/>
+<text class="h" x="470" y="50">Pull</text>
+<rect class="b" x="470" y="62" width="160" height="56" rx="6"/><text class="t" x="482" y="86">GET /events</text><text class="s" x="482" y="105">?after=cursor · SSE</text>
+<text class="h" x="470" y="182">Push</text>
+<rect class="b" x="470" y="194" width="160" height="56" rx="6"/><text class="t" x="482" y="218">Webhooks</text><text class="s" x="482" y="237">signed, standard</text>
+<path class="l" d="M425,150L468,95"/><path class="l" d="M425,180L468,220"/>
+<rect class="b" x="670" y="125" width="115" height="70" rx="6"/><text class="t" x="682" y="152">Agent</text><text class="s" x="682" y="172">resumes from</text><text class="s" x="682" y="188">its cursor</text>
+<path class="l" d="M630,90L668,140"/><path class="l" d="M630,222L668,180"/>
+<text class="s" x="215" y="285">Same event IDs and ordering on both paths. Missed a push? Pull from your cursor.</text>
+</svg>

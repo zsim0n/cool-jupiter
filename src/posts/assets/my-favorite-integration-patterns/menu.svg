@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="system-ui,sans-serif">
+<rect width="800" height="500" fill="#f3efe6"/>
+<rect x="20" y="20" width="760" height="460" rx="6" fill="#fffdf8" stroke="#1b1b1b" stroke-width="2"/>
+<text x="400" y="75" text-anchor="middle" font-size="28" font-weight="700" letter-spacing="5" fill="#1b1b1b">INTEGRATION MENU</text>
+<text x="400" y="105" text-anchor="middle" font-size="15" font-style="italic" fill="#FF3B14">House rule: the lightest pattern that fits</text>
+<line x1="70" y1="125" x2="730" y2="125" stroke="#1b1b1b"/>
+<g font-size="13" fill="#FF3B14" font-weight="700" letter-spacing="3">
+<text x="70" y="165">STARTERS</text><text x="70" y="305">SIDES</text>
+<text x="430" y="165">MAINS</text><text x="430" y="353">DESSERT</text><text x="430" y="428">CHEF'S SPECIAL</text></g>
+<g font-size="17" font-weight="600" fill="#1b1b1b">
+<text x="70" y="192">API</text><text x="70" y="240">Durable command</text>
+<text x="70" y="332">Data product</text><text x="70" y="380">Adapter &amp; strangler</text><text x="70" y="428">File exchange</text>
+<text x="430" y="192">Business event</text><text x="430" y="240">Event stream</text><text x="430" y="288">Workflow &amp; saga</text>
+<text x="430" y="380">Governed agent</text><text x="430" y="452">POKE</text></g>
+<g font-size="13" font-style="italic" fill="#666">
+<text x="70" y="210">an answer, right now</text><text x="70" y="258">one owner, acts later</text>
+<text x="70" y="350">data mesh, distributed</text><text x="70" y="398">move the interface, not the consumers</text><text x="70" y="446">for partners who still love SFTP</text>
+<text x="430" y="210">a fact, after commit</text><text x="430" y="258">high volume, replayable</text><text x="430" y="306">long-running, with an undo</text>
+<text x="430" y="398">AI with a tool allow-list</text><text x="480" y="452">publish once, kick off everywhere</text></g>
+</svg>

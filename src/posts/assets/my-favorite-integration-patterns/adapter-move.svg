@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280"><style>.bg{fill:#fafafa}.b{fill:#fff;stroke:#1b1b1b;stroke-width:1.5}.x{fill:#fff;stroke:#FF3B14;stroke-width:2}.d{fill:#fff;stroke:#FF3B14;stroke-width:1.5;stroke-dasharray:5 4}.t{font:600 14px system-ui,sans-serif;fill:#1b1b1b}.s{font:12px system-ui,sans-serif;fill:#555}.h{font:700 15px system-ui,sans-serif;fill:#FF3B14}.l{stroke:#1b1b1b;stroke-width:1.5;fill:none;marker-end:url(#m)}.ld{stroke:#999;stroke-width:1.2;fill:none;stroke-dasharray:4 4}.lx{stroke:#FF3B14;stroke-width:1.5;fill:none;stroke-dasharray:5 4;marker-end:url(#mx)}</style><defs><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1b1b1b"/></marker><marker id="mx" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#FF3B14"/></marker></defs>
+<rect class="bg" width="800" height="280"/>
+<line x1="400" y1="20" x2="400" y2="240" stroke="#ddd"/>
+<text class="h" x="20" y="35">1. Wrap the legacy</text>
+<text class="h" x="420" y="35">2. Move what's behind the contract</text>
+<rect class="b" x="20" y="65" width="90" height="34" rx="6"/><text class="t" x="30" y="87">Web shop</text>
+<rect class="b" x="20" y="113" width="90" height="34" rx="6"/><text class="t" x="30" y="135">Mobile</text>
+<rect class="b" x="20" y="161" width="90" height="34" rx="6"/><text class="t" x="30" y="183">Agent</text>
+<rect class="x" x="140" y="75" width="115" height="110" rx="6"/><text class="t" x="152" y="100">Adapter</text><text class="s" x="152" y="122">stable contract</text><text class="s" x="152" y="142">maps · retries</text><text class="s" x="152" y="160">auth · events</text>
+<rect class="b" x="285" y="105" width="100" height="50" rx="6"/><text class="t" x="297" y="135">Legacy ERP</text>
+<path class="l" d="M110,82L138,115"/><path class="l" d="M110,130H138"/><path class="l" d="M110,178L138,145"/><path class="l" d="M255,130H283"/>
+<rect class="b" x="420" y="65" width="90" height="34" rx="6"/><text class="t" x="430" y="87">Web shop</text>
+<rect class="b" x="420" y="113" width="90" height="34" rx="6"/><text class="t" x="430" y="135">Mobile</text>
+<rect class="b" x="420" y="161" width="90" height="34" rx="6"/><text class="t" x="430" y="183">Agent</text>
+<rect class="x" x="540" y="75" width="115" height="110" rx="6"/><text class="t" x="552" y="100">Adapter</text><text class="s" x="552" y="122">same contract</text>
+<rect class="b" x="685" y="70" width="100" height="50" rx="6"/><text class="t" x="695" y="92">New service</text><text class="s" x="697" y="110">takes over</text>
+<rect x="685" y="140" width="100" height="45" rx="6" fill="#f0f0f0" stroke="#aaa" stroke-dasharray="4 4"/><text x="697" y="160" style="font:600 14px system-ui,sans-serif" fill="#999">Legacy ERP</text><text class="s" x="697" y="177" fill="#999">retiring</text>
+<path class="l" d="M510,82L538,115"/><path class="l" d="M510,130H538"/><path class="l" d="M510,178L538,145"/><path class="l" d="M655,115L683,98"/><path class="ld" d="M655,145L683,160"/>
+<text class="s" x="20" y="230">Consumers call the adapter, not the legacy system.</text>
+<text class="s" x="420" y="230">The interface moved. The consumers never noticed.</text>
+</svg>
