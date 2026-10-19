@@ -95,6 +95,14 @@ import SEOHead from "../components/SEOHead.astro";
           color: var(--brand-paper);
         }
       }
+      /* Post diagrams (SVG) have dark text on a transparent background:
+         give them a light backing in dark mode so they stay readable. */
+      [data-theme="dark"] img[src$=".svg"] { background: #fff; }
+      [data-theme="dark"] .mdx-image img[src$=".svg"] { border-radius: 8px; padding: 0.5rem; }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) img[src$=".svg"] { background: #fff; }
+        :root:not([data-theme="light"]) .mdx-image img[src$=".svg"] { border-radius: 8px; padding: 0.5rem; }
+      }
     </style>
   </head>
   <body>
