@@ -26,7 +26,7 @@ npm run preview      # serve the built dist/ locally
 ## Where things live
 
 - `src/posts/**/*.mdx` — **published** posts (the `posts` content collection).
-- `src/drafts/*.mdx` — drafts, **not published** (outside the collection's `base`).
+- Drafts: add `draft: true` to a post's frontmatter in `src/posts/` — shown in `npm run dev`, excluded from the production build.
 - `src/content.config.ts` — post schema: `title`, `thumbnail` (image), `date`,
   `excerpt?`.
 - `src/pages/` — routes: `index.astro` (home card grid), `blog/[slug].astro`

@@ -1,13 +1,13 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
-const posts = (await getCollection("posts")).sort(
+const posts = (await getCollection("posts", ({ data }) => import.meta.env.DEV || !data.draft)).sort(
   (a, b) => b.data.date.getTime() - a.data.date.getTime(),
 );
 
 const seo = {
   title: "Zoltan Simon – Software Design & Engineering Insights",
-  description:"Explore expert articles on software engineering, Low-Code/No-Code development, JAMStack innovations, and platform-as-code strategies. Empower your digital transformation with actionable insights and proven tips for modern developers.",
+  description:"Architecture writing by Zoltan Simon: just-enough architecture, platforms and data mesh in regulated environments, and the architect as leader.",
   image:"/hello.png"
 }
 ---

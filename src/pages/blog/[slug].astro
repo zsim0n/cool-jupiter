@@ -6,7 +6,7 @@ import Figure from '../../components/mdx/Figure.astro';
 export const components = {blockquote: Blockquote, img:Figure}
 
 export async function getStaticPaths() {
-	const posts = await getCollection('posts');
+	const posts = await getCollection('posts', ({ data }) => import.meta.env.DEV || !data.draft);
 	return posts.map((post) => ({
 		params: { slug: post.id },
 		props: {post},
