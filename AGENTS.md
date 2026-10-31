@@ -82,3 +82,27 @@ Three gotchas that will bite you:
 - **Cloudflare Web Analytics** beacon is in `Root.astro`, injected on production
   builds only (`import.meta.env.PROD`).
 - A move to Cloudflare Pages has been considered but deferred — Netlify is stable.
+
+## Working style
+
+### Commits
+- Author commits under the owner's name alone. Do NOT add `Co-Authored-By`,
+  `Claude-Session`, or "Generated with Claude Code" lines to commit messages or
+  PR bodies.
+- One-line commit messages, no body. Start with the kind of change
+  (`Added` / `Updated` / `Refactored` / `Fixed` / `Removed` / `Renamed` …) and
+  say what changed in a nutshell — e.g. `Added RSS category tags`.
+
+### Comments
+- Comment sparingly. Header comments where they orient the reader; one-liners
+  only for the non-obvious (algorithm, side effect, a why/gotcha).
+- No comments restating what obvious code already says.
+
+### Branches
+- Classic prefixes, no AI branding. Format: `<prefix>/<short-kebab-description>`.
+  - `feat/` new feature · `fix/` bug fix · `docs/` docs · `post/` new blog post ·
+    `edit/` edits to existing content · `style/` theme/CSS · `refactor/`
+    restructure · `chore/` deps/tooling.
+  - E.g. `post/zx81-nostalgia`, `fix/light-mode-link-color`.
+- Never use `claude/` or other AI-tool prefixes. (Cloud sessions may auto-assign
+  a `claude/<random>` branch — rename it to the convention above.)
