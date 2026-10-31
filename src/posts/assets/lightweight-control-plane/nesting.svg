@@ -8,7 +8,7 @@
 
 <path class="l" d="M170,150V98"/><path class="l" d="M362,150V98"/><path class="l" d="M554,150V98"/><path class="l" d="M746,150V98"/>
 
-<text class="h" x="20" y="142">One contract</text>
+<text class="h" x="20" y="142">One interface</text>
 <rect class="x" x="20" y="152" width="760" height="46" rx="6"/><text class="t" x="36" y="180">identity · telemetry · inventory · a way to stop</text>
 
 <path class="l" d="M150,252V200"/><path class="l" d="M285,252V200"/><path class="l" d="M440,252V200"/><path class="l" d="M595,252V200"/><path class="l" d="M750,252V200"/>
@@ -20,5 +20,5 @@
 <rect class="b" x="485" y="254" width="140" height="64" rx="6"/><text class="c" x="497" y="280">Agent governance</text><text class="s" x="497" y="300">agents · skills</text>
 <rect class="b" x="640" y="254" width="140" height="64" rx="6"/><text class="c" x="652" y="280">Artifact mgmt</text><text class="s" x="652" y="300">dependencies</text>
 
-<text class="s" x="20" y="352">Each artifact plane exposes the contract once. Any number of higher-order planes can read it.</text>
+<text class="s" x="20" y="352">Each artifact plane exposes the interface once. Any number of higher-order planes can read it.</text>
 </svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400"><style>.b{fill:#fff;stroke:#1b1b1b;stroke-width:1.5}.x{fill:#fff;stroke:#FF3B14;stroke-width:2}.t{font:600 14px system-ui,sans-serif;fill:#1b1b1b}.s{font:12px system-ui,sans-serif;fill:#555}.h{font:700 15px system-ui,sans-serif;fill:#FF3B14}.l{stroke:#1b1b1b;stroke-width:1.5;fill:none;marker-end:url(#m)}.n{stroke:#1b1b1b;stroke-width:1.5;fill:none}</style><defs><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1b1b1b"/></marker></defs>
+
+<rect width="800" height="400" fill="#fff"/>
+<text class="h" x="20" y="28">Today · state lives in each tool</text>
+<text class="h" x="430" y="28">Own the state, rent the orchestrator</text>
+
+<rect class="b" x="100" y="48" width="220" height="56" rx="6"/><text class="t" x="114" y="72">Enterprise orchestrator</text><text class="s" x="114" y="92">1,000 connectors</text>
+<path class="l" d="M210,104L75,176"/><path class="l" d="M210,104V176"/><path class="l" d="M210,104L345,176"/>
+<rect class="b" x="20" y="176" width="110" height="64" rx="6"/><text class="t" x="34" y="202">ERP</text><text class="s" x="34" y="222">its own state</text>
+<rect class="b" x="155" y="176" width="110" height="64" rx="6"/><text class="t" x="169" y="202">ITSM</text><text class="s" x="169" y="222">its own state</text>
+<rect class="b" x="290" y="176" width="110" height="64" rx="6"/><text class="t" x="304" y="202">QMS</text><text class="s" x="304" y="222">its own state</text>
+<path class="n" d="M130,208H155"/><path class="n" d="M265,208H290"/><path class="n" d="M75,240Q210,300 345,240"/>
+<text class="s" x="20" y="340">Every handover carries state between silos.</text>
+<text class="s" x="20" y="358">One more orchestrator on top repeats the problem.</text>
+
+<rect class="b" x="430" y="48" width="64" height="44" rx="6"/><text class="t" x="440" y="75">Script</text>
+<rect class="b" x="500" y="48" width="64" height="44" rx="6"/><text class="t" x="514" y="75">Flow</text>
+<rect class="b" x="570" y="48" width="64" height="44" rx="6"/><text class="t" x="583" y="75">Saga</text>
+<rect class="b" x="640" y="48" width="64" height="44" rx="6"/><text class="t" x="652" y="75">Suite</text>
+<rect class="b" x="710" y="48" width="64" height="44" rx="6"/><text class="t" x="719" y="75">Agent</text>
+<path class="l" d="M462,92V148"/><path class="l" d="M532,92V148"/><path class="l" d="M602,92V148"/><path class="l" d="M672,92V148"/><path class="l" d="M742,92V148"/>
+
+<rect class="x" x="430" y="150" width="344" height="76" rx="6"/><text class="t" x="444" y="176">Process state in the mesh</text><text class="s" x="444" y="196">current state + immutable transition log</text><text class="s" x="444" y="214">owned by the domain, guarded by write contracts</text>
+
+<rect class="b" x="430" y="284" width="76" height="44" rx="6"/><text class="t" x="452" y="311">ERP</text>
+<rect class="b" x="519" y="284" width="76" height="44" rx="6"/><text class="t" x="539" y="311">ITSM</text>
+<rect class="b" x="608" y="284" width="76" height="44" rx="6"/><text class="t" x="628" y="311">QMS</text>
+<rect class="b" x="698" y="284" width="76" height="44" rx="6"/><text class="t" x="716" y="311">Apps</text>
+<path class="l" d="M468,284V228"/><path class="l" d="M557,284V228"/><path class="l" d="M646,284V228"/><path class="l" d="M736,284V228"/>
+<text class="s" x="430" y="358">Systems expose data elements. Tools stay thin and swappable.</text>
+</svg>
