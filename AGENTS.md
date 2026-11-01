@@ -11,7 +11,7 @@ via CDN)** plus a small brand theme layer.
 
 ## Toolchain
 
-npm (`package-lock.json`), Node 22 pinned in `.nvmrc`.
+npm (`package-lock.json`), Node version in `.nvmrc` (current LTS major).
 
 ```bash
 npm install          # sharp builds automatically for image optimization
@@ -73,8 +73,6 @@ Gotchas:
 
 - **Netlify serves production.** Push to `main` → Netlify builds
   (`npm run build`, configured in the Netlify dashboard, not in the repo).
-- `.github/workflows/astro.yml` also deploys to GitHub Pages **on every push
-  to `main`**. It's a test target only, not production.
 - The Cloudflare Web Analytics beacon in `Root.astro` is only injected on
   production builds (`import.meta.env.PROD`).
 
