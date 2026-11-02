@@ -2,11 +2,11 @@
 
 # Cool Jupiter: Things – Zoltansimon.me
 
-Welcome to the repository for *Cool Jupiter: Things*, my personal Astro-powered blog hosted on [Zoltansimon.me](https://zoltansimon.me). This project uses Astro, PicoCSS, and MDX to create a minimalist and fast blog experience. The repository contains both published posts and drafts.
+Welcome to the repository for *Cool Jupiter: Things*, my personal Astro-powered blog hosted on [Zoltansimon.me](https://zoltansimon.me). This project uses Astro, PicoCSS, and MDX to create a minimalist and fast blog experience. Posts are MDX files in `src/posts/`; a draft is simply a post flagged `draft: true` in its frontmatter.
 
 ## 🚀 Project Structure
 
-This project follows the [Astro project structure guidelines](https://docs.astro.build/en/basics/project-structure/). In addition to standard directories, there are two folders dedicated to MDX content: `posts` for published posts and `drafts` for work-in-progress posts.
+This project follows the [Astro project structure guidelines](https://docs.astro.build/en/basics/project-structure/). MDX content lives in `src/posts/`, with each post's images co-located under `src/posts/assets/<slug>/`. Drafts aren't a separate folder: a post with `draft: true` in its frontmatter shows up in dev but is excluded from the production build.
 
 ```text
 /
@@ -16,9 +16,7 @@ This project follows the [Astro project structure guidelines](https://docs.astro
 │   │   ├── my-blog-post.mdx
 │   │   └── assets/
 │   │       └── my-blog-post/
-│   │           └── image.png
-│   ├── drafts/
-│   │   └── a-draft-post.mdx
+│   │           └── card.png
 │   ├── ...
 │   ├── layouts/
 │   │   └── Layout.astro
@@ -35,6 +33,9 @@ This project uses npm to manage dependencies and scripts. The typical commands a
 - `npm run dev` to run the development server (usually available at [http://localhost:4321](http://localhost:4321)).
 - `npm run build` to create a production build.
 - `npm run preview` to preview the production build locally.
+- `npm run drafts` to list which posts are still marked as drafts.
+
+The Node version is pinned in `.nvmrc`.
 
 
 ## ☁️ Hosted on Netlify
