@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 305"><style>.b{fill:#fff;stroke:#1b1b1b;stroke-width:1.5}.x{fill:#fff;stroke:#FF3B14;stroke-width:2}.d{fill:#fff;stroke:#999;stroke-width:1.5;stroke-dasharray:5 4}.t{font:600 14px system-ui,sans-serif;fill:#1b1b1b}.c{font:600 13px system-ui,sans-serif;fill:#1b1b1b}.s{font:12px system-ui,sans-serif;fill:#555}.g{font:12px system-ui,sans-serif;fill:#999}.v{font:13px system-ui,sans-serif;fill:#1b1b1b}.h{font:700 15px system-ui,sans-serif;fill:#FF3B14}.m{font:12px ui-monospace,Menlo,monospace;fill:#1b1b1b}.o{font:600 13px system-ui,sans-serif;fill:#FF3B14}.k{text-anchor:middle}.l{stroke:#1b1b1b;stroke-width:1.5;fill:none;marker-end:url(#m)}.lb{stroke:#1b1b1b;stroke-width:1.5;fill:none;marker-end:url(#m);marker-start:url(#m)}.r{stroke:#ddd;stroke-width:1}</style><defs><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" fill="#1b1b1b"/></marker></defs>
+<rect width="800" height="305" fill="#fff"/>
+<text class="h" x="20" y="28">Six weeks, one case</text>
+<text class="t" x="20" y="74">One agent,</text><text class="t" x="20" y="92">end to end</text>
+<rect class="b" x="200" y="58" width="140" height="36" rx="6"/><text class="s" x="212" y="81">hours: fine</text>
+<rect class="d" x="340" y="58" width="440" height="36" rx="6"/><text class="g" x="354" y="81">then context lost, session gone, guessing</text>
+<text class="t" x="20" y="152">Many small</text><text class="t" x="20" y="170">transitions</text>
+<rect class="b" x="200" y="132" width="100" height="50" rx="6"/><text class="c k" x="250" y="153">Script</text><text class="s k" x="250" y="172">open</text>
+<rect class="b" x="320" y="132" width="100" height="50" rx="6"/><text class="c k" x="370" y="153">Script</text><text class="s k" x="370" y="172">start</text>
+<rect class="b" x="440" y="132" width="100" height="50" rx="6"/><text class="c k" x="490" y="153">Agent</text><text class="s k" x="490" y="172">repair</text>
+<rect class="b" x="560" y="132" width="100" height="50" rx="6"/><text class="c k" x="610" y="153">Agent</text><text class="s k" x="610" y="172">finish</text>
+<rect class="b" x="680" y="132" width="100" height="50" rx="6"/><text class="c k" x="730" y="153">Human</text><text class="s k" x="730" y="172">close</text>
+<path class="l" d="M250,182V222"/><path class="l" d="M370,182V222"/><path class="l" d="M490,182V222"/><path class="l" d="M610,182V222"/><path class="l" d="M730,182V222"/>
+<text class="t" x="20" y="249">Shared state</text>
+<rect class="x" x="200" y="224" width="580" height="40" rx="6"/><text class="t" x="214" y="249">Process state · one transition log</text>
+<text class="s k" x="250" y="290">day 1</text><text class="s k" x="370" y="290">day 1</text><text class="s k" x="490" y="290">day 3</text><text class="s k" x="610" y="290">week 4</text><text class="s k" x="730" y="290">week 6</text>
+</svg>

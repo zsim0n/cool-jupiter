@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340"><style>.b{fill:#fff;stroke:#1b1b1b;stroke-width:1.5}.x{fill:#fff;stroke:#FF3B14;stroke-width:2}.d{fill:#fff;stroke:#999;stroke-width:1.5;stroke-dasharray:5 4}.t{font:600 14px system-ui,sans-serif;fill:#1b1b1b}.c{font:600 13px system-ui,sans-serif;fill:#1b1b1b}.s{font:12px system-ui,sans-serif;fill:#555}.g{font:12px system-ui,sans-serif;fill:#999}.v{font:13px system-ui,sans-serif;fill:#1b1b1b}.h{font:700 15px system-ui,sans-serif;fill:#FF3B14}.m{font:12px ui-monospace,Menlo,monospace;fill:#1b1b1b}.o{font:600 13px system-ui,sans-serif;fill:#FF3B14}.k{text-anchor:middle}.l{stroke:#1b1b1b;stroke-width:1.5;fill:none;marker-end:url(#m)}.lb{stroke:#1b1b1b;stroke-width:1.5;fill:none;marker-end:url(#m);marker-start:url(#m)}.r{stroke:#ddd;stroke-width:1}.so{font:12px system-ui,sans-serif;fill:#FF3B14}.w{stroke:#1b1b1b;stroke-width:1.2;fill:none;opacity:.75}</style><defs><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" fill="#1b1b1b"/></marker></defs>
+<rect width="800" height="340" fill="#fff"/>
+<text class="h" x="20" y="24">Every suite holds a piece of the state</text>
+<g transform="translate(0,24)">
+<path class="w" d="M160,70 C300,200 500,-20 640,70"/>
+<path class="w" d="M160,80 C350,90 300,220 490,232"/>
+<path class="w" d="M150,88 C400,250 450,60 640,220"/>
+<path class="w" d="M360,68 C200,200 300,150 160,220"/>
+<path class="w" d="M400,68 C520,150 200,170 300,232"/>
+<path class="w" d="M440,68 C430,200 600,120 660,212"/>
+<path class="w" d="M640,80 C400,60 450,260 160,240"/>
+<path class="w" d="M660,88 C500,250 420,90 320,232"/>
+<path class="w" d="M160,250 C350,150 500,300 640,240"/>
+<path class="w" d="M370,256 C400,180 420,320 430,256"/>
+<path class="w" d="M160,56 C250,0 280,90 340,44"/>
+<path class="w" d="M700,88 C720,180 560,140 520,232"/>
+<path class="w" d="M150,212 C300,120 400,300 470,232"/>
+<path class="w" d="M460,44 C560,0 560,100 640,60"/>
+<path class="w" d="M100,88 C80,150 120,160 100,212"/>
+<rect class="b" x="40" y="40" width="120" height="48" rx="6"/><text class="c" x="54" y="61">ERP</text><text class="so" x="54" y="79">own state</text>
+<rect class="b" x="340" y="20" width="120" height="48" rx="6"/><text class="c" x="354" y="41">Service desk</text><text class="so" x="354" y="59">own state</text>
+<rect class="b" x="640" y="40" width="120" height="48" rx="6"/><text class="c" x="654" y="61">Quality</text><text class="so" x="654" y="79">own state</text>
+<rect class="b" x="40" y="212" width="120" height="48" rx="6"/><text class="c" x="54" y="233">CRM</text><text class="so" x="54" y="251">own state</text>
+<rect class="b" x="250" y="232" width="120" height="48" rx="6"/><text class="c" x="264" y="253">App</text><text class="so" x="264" y="271">own state</text>
+<rect class="b" x="430" y="232" width="120" height="48" rx="6"/><text class="c" x="444" y="253">App</text><text class="so" x="444" y="271">own state</text>
+<rect class="b" x="640" y="212" width="120" height="48" rx="6"/><text class="c" x="654" y="233">Spreadsheet</text><text class="so" x="654" y="251">own state</text>
+</g>
+<text class="s" x="20" y="330">Every line is an integration someone has to keep alive.</text>
+</svg>

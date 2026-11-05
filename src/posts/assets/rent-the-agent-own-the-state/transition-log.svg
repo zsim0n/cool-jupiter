@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 262"><style>.b{fill:#fff;stroke:#1b1b1b;stroke-width:1.5}.x{fill:#fff;stroke:#FF3B14;stroke-width:2}.d{fill:#fff;stroke:#999;stroke-width:1.5;stroke-dasharray:5 4}.t{font:600 14px system-ui,sans-serif;fill:#1b1b1b}.c{font:600 13px system-ui,sans-serif;fill:#1b1b1b}.s{font:12px system-ui,sans-serif;fill:#555}.g{font:12px system-ui,sans-serif;fill:#999}.v{font:13px system-ui,sans-serif;fill:#1b1b1b}.h{font:700 15px system-ui,sans-serif;fill:#FF3B14}.m{font:12px ui-monospace,Menlo,monospace;fill:#1b1b1b}.o{font:600 13px system-ui,sans-serif;fill:#FF3B14}.k{text-anchor:middle}.l{stroke:#1b1b1b;stroke-width:1.5;fill:none;marker-end:url(#m)}.lb{stroke:#1b1b1b;stroke-width:1.5;fill:none;marker-end:url(#m);marker-start:url(#m)}.r{stroke:#ddd;stroke-width:1}</style><defs><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" fill="#1b1b1b"/></marker></defs>
+<rect width="800" height="262" fill="#fff"/>
+<text class="h" x="20" y="28">One log, every writer</text>
+<text class="s" x="20" y="46">append-only · time-ordered IDs sort it · the audit trail is the data</text>
+<text class="c" x="20" y="80">Transaction ID</text><text class="c" x="170" y="80">Object</text><text class="c" x="270" y="80">Correlation</text><text class="c" x="370" y="80">From → to</text><text class="c" x="540" y="80">By</text><text class="c" x="650" y="80">Why</text>
+<path class="r" d="M20,90H780"/>
+<text class="m" x="20" y="114">01HX2AY3TN…</text><text class="m" x="170" y="114">CASE-001</text><text class="m" x="270" y="114">FLOW-1</text><text class="v" x="370" y="114">— → reported</text><text class="c" x="540" y="114">intake-script</text><text class="s" x="650" y="114">ticket received</text>
+<path class="r" d="M20,124H780"/>
+<text class="m" x="20" y="146">01HX2AY9QF…</text><text class="m" x="170" y="146">CASE-001</text><text class="m" x="270" y="146">FLOW-1</text><text class="v" x="370" y="146">reported → in-work</text><text class="c" x="540" y="146">intake-script</text><text class="s" x="650" y="146">technician assigned</text>
+<path class="r" d="M20,156H780"/>
+<text class="m" x="20" y="178">01HX2B1C7M…</text><text class="m" x="170" y="178">CASE-001</text><text class="m" x="270" y="178">FLOW-1</text><text class="v" x="370" y="178">in-work → repairing</text><text class="c" x="540" y="178">agent</text><text class="s" x="650" y="178">parts in stock</text>
+<path class="r" d="M20,188H780"/>
+<text class="m" x="20" y="210">01HX2B4R2D…</text><text class="m" x="170" y="210">CASE-001</text><text class="m" x="270" y="210">FLOW-1</text><text class="v" x="370" y="210">repairing → done</text><text class="c" x="540" y="210">agent</text><text class="s" x="650" y="210">test passed</text>
+<path class="r" d="M20,220H780"/>
+<text class="m" x="20" y="242">01HX2C8K5V…</text><text class="m" x="170" y="242">CASE-001</text><text class="m" x="270" y="242">FLOW-1</text><text class="v" x="370" y="242">done → closed</text><text class="o" x="540" y="242">human</text><text class="s" x="650" y="242">customer confirmed</text>
+</svg>

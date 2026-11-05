@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400"><style>.b{fill:#fff;stroke:#1b1b1b;stroke-width:1.5}.x{fill:#fff;stroke:#FF3B14;stroke-width:2}.d{fill:#fff;stroke:#999;stroke-width:1.5;stroke-dasharray:5 4}.t{font:600 14px system-ui,sans-serif;fill:#1b1b1b}.c{font:600 13px system-ui,sans-serif;fill:#1b1b1b}.s{font:12px system-ui,sans-serif;fill:#555}.g{font:12px system-ui,sans-serif;fill:#999}.v{font:13px system-ui,sans-serif;fill:#1b1b1b}.h{font:700 15px system-ui,sans-serif;fill:#FF3B14}.m{font:12px ui-monospace,Menlo,monospace;fill:#1b1b1b}.o{font:600 13px system-ui,sans-serif;fill:#FF3B14}.k{text-anchor:middle}.l{stroke:#1b1b1b;stroke-width:1.5;fill:none;marker-end:url(#m)}.lb{stroke:#1b1b1b;stroke-width:1.5;fill:none;marker-end:url(#m);marker-start:url(#m)}.r{stroke:#ddd;stroke-width:1}.r2{stroke:#1b1b1b;stroke-width:1.5;fill:none}</style><defs><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" fill="#1b1b1b"/></marker></defs>
+<rect width="800" height="400" fill="#fff"/>
+<text class="h" x="20" y="28">Everything on top stays thin</text>
+<rect class="d" x="20" y="44" width="370" height="106" rx="8"/><text class="c" x="32" y="66">Applications · for the users</text>
+<rect class="b" x="32" y="78" width="110" height="56" rx="6"/><text class="c k" x="87" y="102">Work queue</text><text class="s k" x="87" y="121">technician</text>
+<rect class="b" x="152" y="78" width="110" height="56" rx="6"/><text class="c k" x="207" y="102">Close-out</text><text class="s k" x="207" y="121">supervisor</text>
+<rect class="b" x="272" y="78" width="106" height="56" rx="6"/><text class="c k" x="325" y="102">MCP tool</text><text class="s k" x="325" y="121">agents</text>
+<rect class="d" x="410" y="44" width="370" height="106" rx="8"/><text class="c" x="422" y="66">Workers · move the state</text>
+<rect class="b" x="422" y="78" width="64" height="56" rx="6"/><text class="c k" x="454" y="111">Script</text>
+<rect class="b" x="494" y="78" width="64" height="56" rx="6"/><text class="c k" x="526" y="111">Flow</text>
+<rect class="b" x="566" y="78" width="64" height="56" rx="6"/><text class="c k" x="598" y="111">Saga</text>
+<rect class="b" x="638" y="78" width="64" height="56" rx="6"/><text class="c k" x="670" y="111">Suite</text>
+<rect class="b" x="710" y="78" width="64" height="56" rx="6"/><text class="c k" x="742" y="111">Agent</text>
+<path class="l" d="M205,150V186"/><path class="l" d="M595,150V186"/>
+<rect class="x" x="20" y="188" width="760" height="60" rx="6"/><text class="t" x="36" y="212">Actions · the only way to write</text><text class="s" x="36" y="234">open · start · repair · finish · close · who may run it, what it needs, one transition per run</text>
+<path class="l" d="M400,248V282"/><text class="s" x="408" y="270">append</text>
+<rect class="b" x="20" y="284" width="760" height="72" rx="6"/><text class="t" x="36" y="325">Business objects</text>
+<rect class="b" x="230" y="304" width="90" height="34" rx="17"/><text class="c k" x="275" y="326">Case</text>
+<rect class="b" x="350" y="304" width="90" height="34" rx="17"/><text class="c k" x="395" y="326">Asset</text>
+<rect class="b" x="470" y="304" width="110" height="34" rx="17"/><text class="c k" x="525" y="326">Part</text>
+<path class="r2" d="M320,321H350"/><path class="r2" d="M440,321H470"/>
+<text class="s" x="604" y="326">state + history each</text>
+<text class="s" x="20" y="388">Everything reads the objects. Everything writes through actions. Systems feed the objects underneath.</text>
+</svg>

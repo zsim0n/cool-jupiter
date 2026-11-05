@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330"><style>.b{fill:#fff;stroke:#1b1b1b;stroke-width:1.5}.x{fill:#fff;stroke:#FF3B14;stroke-width:2}.d{fill:#fff;stroke:#999;stroke-width:1.5;stroke-dasharray:5 4}.t{font:600 14px system-ui,sans-serif;fill:#1b1b1b}.c{font:600 13px system-ui,sans-serif;fill:#1b1b1b}.s{font:12px system-ui,sans-serif;fill:#555}.g{font:12px system-ui,sans-serif;fill:#999}.v{font:13px system-ui,sans-serif;fill:#1b1b1b}.h{font:700 15px system-ui,sans-serif;fill:#FF3B14}.m{font:12px ui-monospace,Menlo,monospace;fill:#1b1b1b}.o{font:600 13px system-ui,sans-serif;fill:#FF3B14}.k{text-anchor:middle}.l{stroke:#1b1b1b;stroke-width:1.5;fill:none;marker-end:url(#m)}.lb{stroke:#1b1b1b;stroke-width:1.5;fill:none;marker-end:url(#m);marker-start:url(#m)}.r{stroke:#ddd;stroke-width:1}</style><defs><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" fill="#1b1b1b"/></marker></defs>
+<rect width="800" height="330" fill="#fff"/>
+<text class="h" x="20" y="28">Harness-first</text><text class="s" x="20" y="46">the workflow engine keeps the state</text>
+<rect class="b" x="20" y="62" width="340" height="56" rx="6"/><text class="t" x="34" y="86">Workflow engine</text><text class="s" x="34" y="106">schedules, retries, approvals</text>
+<rect class="x" x="270" y="74" width="76" height="32" rx="4"/><text class="c k" x="308" y="95">state</text>
+<path class="l" d="M190,118V156"/><text class="s" x="198" y="142">ACP</text>
+<rect class="b" x="20" y="158" width="104" height="48" rx="6"/><text class="c k" x="72" y="187">Claude Code</text>
+<rect class="b" x="138" y="158" width="104" height="48" rx="6"/><text class="c k" x="190" y="187">Codex</text>
+<rect class="b" x="256" y="158" width="104" height="48" rx="6"/><text class="c k" x="308" y="187">OpenCode</text>
+<path class="l" d="M72,206V240"/><path class="l" d="M190,206V240"/><path class="l" d="M308,206V240"/>
+<rect class="b" x="20" y="242" width="340" height="40" rx="6"/><text class="t" x="34" y="267">Models</text>
+<text class="s" x="20" y="312">The harness is swappable. The engine is the new lock-in.</text>
+
+<text class="h" x="430" y="28">State outside both</text><text class="s" x="430" y="46">harness and orchestrator are replaceable workers</text>
+<rect class="b" x="430" y="62" width="160" height="56" rx="6"/><text class="t" x="444" y="86">Orchestrator</text><text class="s" x="444" y="106">any engine, any flow</text>
+<rect class="b" x="620" y="62" width="160" height="56" rx="6"/><text class="t" x="634" y="86">Harness</text><text class="s" x="634" y="106">any agent harness</text>
+<path class="l" d="M590,96H618"/><text class="s k" x="605" y="84">ACP</text>
+<path class="lb" d="M510,121V173"/><text class="s" x="518" y="152">read · write</text>
+<path class="lb" d="M700,121V173"/><text class="s" x="708" y="152">read · write</text>
+<rect class="x" x="430" y="176" width="350" height="72" rx="6"/><text class="t" x="446" y="202">Process state</text><text class="s" x="446" y="224">immutable history · object, transaction, correlation IDs</text>
+<text class="s" x="430" y="312">Read the state to resume. Swap either one.</text>
+</svg>

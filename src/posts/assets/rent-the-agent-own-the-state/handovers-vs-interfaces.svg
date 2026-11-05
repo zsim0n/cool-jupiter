@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330"><style>.b{fill:#fff;stroke:#1b1b1b;stroke-width:1.5}.x{fill:#fff;stroke:#FF3B14;stroke-width:2}.d{fill:#fff;stroke:#999;stroke-width:1.5;stroke-dasharray:5 4}.t{font:600 14px system-ui,sans-serif;fill:#1b1b1b}.c{font:600 13px system-ui,sans-serif;fill:#1b1b1b}.s{font:12px system-ui,sans-serif;fill:#555}.g{font:12px system-ui,sans-serif;fill:#999}.v{font:13px system-ui,sans-serif;fill:#1b1b1b}.h{font:700 15px system-ui,sans-serif;fill:#FF3B14}.m{font:12px ui-monospace,Menlo,monospace;fill:#1b1b1b}.o{font:600 13px system-ui,sans-serif;fill:#FF3B14}.k{text-anchor:middle}.l{stroke:#1b1b1b;stroke-width:1.5;fill:none;marker-end:url(#m)}.lb{stroke:#1b1b1b;stroke-width:1.5;fill:none;marker-end:url(#m);marker-start:url(#m)}.r{stroke:#ddd;stroke-width:1}</style><defs><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" fill="#1b1b1b"/></marker></defs>
+<rect width="800" height="330" fill="#fff"/>
+<text class="h" x="20" y="28">Handover-centric</text><text class="s" x="20" y="46">the state travels with the work</text>
+<rect class="b" x="20" y="110" width="64" height="52" rx="6"/><text class="c k" x="52" y="141">Team A</text>
+<rect class="b" x="116" y="110" width="64" height="52" rx="6"/><text class="c k" x="148" y="141">Team B</text>
+<rect class="b" x="212" y="110" width="64" height="52" rx="6"/><text class="c k" x="244" y="141">System</text>
+<rect class="b" x="308" y="110" width="64" height="52" rx="6"/><text class="c k" x="340" y="141">Team C</text>
+<path class="l" d="M84,136H114"/><path class="l" d="M180,136H210"/><path class="l" d="M276,136H306"/>
+<text class="s k" x="100" y="124">wait</text><text class="s k" x="196" y="124">wait</text><text class="s k" x="292" y="124">wait</text>
+<rect class="x" x="20" y="170" width="64" height="24" rx="4"/><text class="s k" x="52" y="186">copy</text>
+<rect class="x" x="116" y="170" width="64" height="24" rx="4"/><text class="s k" x="148" y="186">copy</text>
+<rect class="x" x="212" y="170" width="64" height="24" rx="4"/><text class="s k" x="244" y="186">copy</text>
+<rect class="x" x="308" y="170" width="64" height="24" rx="4"/><text class="s k" x="340" y="186">copy</text>
+<text class="s" x="20" y="240">Every arrow is a wait.</text>
+<text class="s" x="20" y="258">Every box keeps its own copy of the state.</text>
+
+<text class="h" x="430" y="28">Interfaces over handovers</text><text class="s" x="430" y="46">everyone works on the same case</text>
+<rect class="b" x="430" y="70" width="110" height="40" rx="6"/><text class="c k" x="485" y="95">Team A</text>
+<rect class="b" x="670" y="70" width="110" height="40" rx="6"/><text class="c k" x="725" y="95">Team B</text>
+<rect class="b" x="430" y="270" width="110" height="40" rx="6"/><text class="c k" x="485" y="295">Agent</text>
+<rect class="b" x="670" y="270" width="110" height="40" rx="6"/><text class="c k" x="725" y="295">System</text>
+<rect class="x" x="515" y="150" width="170" height="56" rx="6"/><text class="t k" x="600" y="174">One case</text><text class="s k" x="600" y="194">shared state</text>
+<path class="lb" d="M505,114L545,146"/><path class="lb" d="M695,114L655,146"/><path class="lb" d="M505,266L545,210"/><path class="lb" d="M695,266L655,210"/>
+</svg>
